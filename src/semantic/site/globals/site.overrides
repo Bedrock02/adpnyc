@@ -1,0 +1,22 @@
+/*******************************
+        Global Overrides
+*******************************/
+.trio-desc {
+  padding: 60px 0px;
+}
+
+.nav-container {
+  background-color: #000000c9;
+}
+
+.sitemap div {
+  padding: 5px 0px !important;
+}
+
+.sitemap a {
+  color: #FFFFFF !important;
+}
+
+.sidemenu a:hover {
+  color: rgb(218, 9, 122);
+}
