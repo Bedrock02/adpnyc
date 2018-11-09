@@ -22,7 +22,7 @@ class IndexPage extends React.Component {
           <Grid>
             <Grid.Row centered padded="true" columns={2}>
               <Grid.Column width={5} textAlign='left'>
-                <SideMenu/>
+              
               </Grid.Column>
               <Grid.Column width={11} stackable="true">
                 {centerContent}

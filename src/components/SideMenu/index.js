@@ -3,7 +3,15 @@ import { Input, Label, Menu } from 'semantic-ui-react';
 import { Link } from 'gatsby';
 
 const LinkedItem = ({ children, ...props}) => {
-    return (<Menu.Item as={Link} {...props}>{children}</Menu.Item>);
+    return (
+      <Menu.Item
+        as={Link}
+        {...props}
+        activeStyle={{ color: "#DA097A"}}
+        >
+        {children}
+      </Menu.Item>
+    );
 };
 
 class SideMenu extends Component {
@@ -15,7 +23,7 @@ class SideMenu extends Component {
           <LinkedItem to="/brochures">
             Brochures
           </LinkedItem>
-          <LinkedItem to="/business-cards">
+          <LinkedItem to="/business_cards">
             Business Cards
           </LinkedItem>
           <LinkedItem to="/postcards">
@@ -24,16 +32,16 @@ class SideMenu extends Component {
           <LinkedItem to="/posters">
             Posters, Banners, Signage
           </LinkedItem>
-          <LinkedItem to="/presentation-folders">
+          <LinkedItem to="/presentation_folders">
             Presentation Folders
           </LinkedItem>
-          <LinkedItem to="/hang-tags">
+          <LinkedItem to="/hangtags">
             Hang Tags
           </LinkedItem>
-          <LinkedItem to="/color-prints">
+          <LinkedItem to="/color_prints">
             Color / B&W Prints
           </LinkedItem>
-          <LinkedItem to="/order-invoice-forms">
+          <LinkedItem to="/order_invoices">
             Order / Invoice Forms
           </LinkedItem>
           <LinkedItem to="/stationery">
@@ -41,6 +49,15 @@ class SideMenu extends Component {
           </LinkedItem>
           <LinkedItem to="/thermography">
             Thermography (Raised Print)
+          </LinkedItem>
+          <LinkedItem to="/counter_cards">
+            Counter Card
+          </LinkedItem>
+          <LinkedItem to="/booklets">
+            Booklets
+          </LinkedItem>
+          <LinkedItem to="/invitations">
+            Invitations
           </LinkedItem>
         </Menu>
       </div>

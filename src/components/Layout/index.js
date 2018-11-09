@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import { Container, Grid, Menu, Responsive } from 'semantic-ui-react'
-import SideMenu from '../SideMenu/';
 import Header from '../Header/';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
@@ -38,11 +37,9 @@ const Layout = ({ children, data }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <Grid relaxed style={{marginTop: '10px'}}>
           <Navigation />
-          <Grid.Row centered padded="true">
-            <Container>
+            <Container style={{paddingTop: '40px'}}>
               {children}
             </Container>
-          </Grid.Row>
         </Grid>
         <Footer />
       </>
