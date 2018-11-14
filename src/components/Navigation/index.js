@@ -14,6 +14,10 @@ const NavStyles = {
   mobileMenu: { color: "#FFFFFF" },
 };
 
+const handleOnClick = (location) => {
+  window.open(location, '_blank');
+}
+
 const CustomMenu = ({ ...props }) => {
   return (
     <Menu {...props}>
@@ -26,7 +30,16 @@ const CustomMenu = ({ ...props }) => {
       <Menu.Item style={NavStyles.menu} as={Link} name="tools" to="/tools" activeStyle={NavStyles.activeMenu}>
         Tools & Information
       </Menu.Item>
-      <Menu.Item style={NavStyles.menu} as={Link} to="https://adpnyc.wetransfer.com/" name="upload_files"/>
+      <Menu.Item
+        style={NavStyles.menu}
+        as={Link}
+        name="upload_files"
+        onClick={(e) => {
+          e.stopPropagation();
+          e.preventDefault();
+          window.open('https://adpnyc.wetransfer.com/', '_blank');
+        }}
+      />
       <Menu.Item style={NavStyles.menu} as={Link} name="contact" to="/contact" activeStyle={NavStyles.activeMenu}/>
     </Menu>
   );

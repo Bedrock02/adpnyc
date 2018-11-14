@@ -15,7 +15,7 @@ const centerContent = (
 
 const sideContent = (
   <Segment textAlign="center" padded>
-    <a href="https://goo.gl/tbkkUH">
+    <a href="https://goo.gl/tbkkUH" target="_bank">
       <Image src={MapImage} centered="true"/>
     </a>
     <h4><Icon name="time"/>Hours of Operation</h4>
