@@ -14,6 +14,10 @@ const LinkedItem = ({ children, ...props}) => {
     );
 };
 
+const sideMenuStyles = {
+  container: { height: '500px' },
+}
+
 class SideMenu extends Component {
   render() {
     return (
