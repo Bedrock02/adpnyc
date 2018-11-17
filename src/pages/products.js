@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Grid, Card, Image } from 'semantic-ui-react';
+import { Link } from 'gatsby';
 import Layout from '../components/Layout/';
 import products from '../data/products';
 import _ from 'lodash';
@@ -16,8 +17,10 @@ class ProductsPage extends React.Component {
             {chunk.map( (product, index) => {
               return (
                 <Grid.Column verticalAlign={"middle"}>
-                  {product.image}
-                  <h2>{product.name}</h2>
+                  <Link to={product.link} style={{color: "#000000c9"}}>
+                    {product.image}
+                    <h2>{product.name}</h2>
+                  </Link>
                 </Grid.Column>
               );
             })}

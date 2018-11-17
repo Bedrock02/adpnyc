@@ -22,7 +22,6 @@ class SideMenu extends Component {
   render() {
     return (
       <div>
-        <h3>Products & Services</h3>
         <Menu vertical className="sidemenu" style={{background: 'rgba(0, 0, 0, 0.07)'}}>
           <LinkedItem to="/brochures">
             Brochures
