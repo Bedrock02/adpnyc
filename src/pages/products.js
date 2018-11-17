@@ -10,28 +10,24 @@ class ProductsPage extends React.Component {
     const product_chunks = _.chunk(products, 3);
     let rows = [];
     _.forEach(product_chunks, (chunk, index) => {
-        rows.push(
-          (
-            <Grid.Row stackable columns={chunk.length} doubling centered="true">
-              {chunk.map( (product, index) => {
-                return (
-                  <Grid.Column>
-                    <Card>
-                      <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' />
-                      <Card.Content>
-                        <Card.Header>{product.name}</Card.Header>
-                      </Card.Content>
-                    </Card>
-                  </Grid.Column>
-                );
-              })}
-            </Grid.Row>
-          )
+      rows.push(
+        (
+          <Grid.Row columns={chunk.length} centered="true">
+            {chunk.map( (product, index) => {
+              return (
+                <Grid.Column verticalAlign={"middle"}>
+                  {product.image}
+                  <h2>{product.name}</h2>
+                </Grid.Column>
+              );
+            })}
+          </Grid.Row>
         )
+      )
     });
     return (
       <Layout>
-        <Grid centered="true">
+        <Grid centered="true" stackable>
           {rows.map( row => row)}
         </Grid>
       </Layout>
