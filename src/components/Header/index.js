@@ -9,7 +9,7 @@ class Header extends React.Component {
       <Grid style={{ padding: '10px 0px' }}>
         <Grid.Row>
           <Grid.Column width={6} verticalAlign="middle">
-            <div><Image src={image} size='large' /></div>
+            <div><Image src={image} size='huge' /></div>
           </Grid.Column>
           <Grid.Column width={10} verticalAlign="middle">
           </Grid.Column>

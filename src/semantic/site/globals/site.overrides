@@ -20,3 +20,8 @@
 .sidemenu a:hover {
   color: rgb(218, 9, 122);
 }
+
+.chrome-picker {
+  margin-left: auto;
+  margin-right: auto;
+}
