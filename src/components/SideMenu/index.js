@@ -23,43 +23,43 @@ class SideMenu extends Component {
     return (
       <div>
         <Menu vertical className="sidemenu" style={{background: 'rgba(0, 0, 0, 0.07)'}}>
-          <LinkedItem to="/brochures">
+          <LinkedItem to="/products/brochures">
             Brochures
           </LinkedItem>
-          <LinkedItem to="/business_cards">
+          <LinkedItem to="/products/business_cards">
             Business Cards
           </LinkedItem>
-          <LinkedItem to="/postcards">
+          <LinkedItem to="/products/postcards">
             Postcards
           </LinkedItem>
-          <LinkedItem to="/posters">
+          <LinkedItem to="/products/posters">
             Posters, Banners, Signage
           </LinkedItem>
-          <LinkedItem to="/presentation_folders">
+          <LinkedItem to="/products/presentation_folders">
             Presentation Folders
           </LinkedItem>
-          <LinkedItem to="/hangtags">
+          <LinkedItem to="/products/hangtags">
             Hang Tags
           </LinkedItem>
-          <LinkedItem to="/color_prints">
+          <LinkedItem to="/products/color_prints">
             Color / B&W Prints
           </LinkedItem>
-          <LinkedItem to="/order_invoices">
+          <LinkedItem to="/products/order_invoices">
             Order / Invoice Forms
           </LinkedItem>
-          <LinkedItem to="/stationery">
+          <LinkedItem to="/products/stationery">
             Stationery
           </LinkedItem>
-          <LinkedItem to="/thermography">
+          <LinkedItem to="/products/thermography">
             Thermography (Raised Print)
           </LinkedItem>
-          <LinkedItem to="/counter_cards">
+          <LinkedItem to="/products/counter_cards">
             Counter Card
           </LinkedItem>
-          <LinkedItem to="/booklets">
+          <LinkedItem to="/products/booklets">
             Booklets
           </LinkedItem>
-          <LinkedItem to="/invitations">
+          <LinkedItem to="/products/invitations">
             Invitations
           </LinkedItem>
         </Menu>

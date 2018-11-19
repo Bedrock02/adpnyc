@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Image, Grid } from 'semantic-ui-react';
-import Layout from '../components/Layout/';
-import ProductLayout from '../components/ProductLayout/';
-import colorImage from '../../public/static/images/adp_ls_color.jpg';
-import colorImage2 from '../../public/static/images/adp_ls_bw.jpg';
+import Layout from '../../components/Layout/';
+import ProductLayout from '../../components/ProductLayout/';
+import colorImage from '../../../public/static/images/adp_ls_color.jpg';
+import colorImage2 from '../../../public/static/images/adp_ls_bw.jpg';
 
 class HangTagsPage extends React.PureComponent {
   render() {

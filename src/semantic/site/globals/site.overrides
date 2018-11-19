@@ -25,3 +25,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.tools a:hover {
+  color: rgb(218, 9, 122);
+}

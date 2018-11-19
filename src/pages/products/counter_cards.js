@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Image, Grid } from 'semantic-ui-react';
-import Layout from '../components/Layout/';
-import ProductLayout from '../components/ProductLayout/';
-import ccImage from '../../public/static/images/adp_cc_foamboard.jpg';
-import ccImage2 from '../../public/static/images/adp_cc_ill_board.jpg';
-import ccImage3 from '../../public/static/images/adp_cc_iam_cc.jpg';
+import Layout from '../../components/Layout/';
+import ProductLayout from '../../components/ProductLayout/';
+import ccImage from '../../../public/static/images/adp_cc_foamboard.jpg';
+import ccImage2 from '../../../public/static/images/adp_cc_ill_board.jpg';
+import ccImage3 from '../../../public/static/images/adp_cc_iam_cc.jpg';
 
 class CounterCardsPage extends React.PureComponent {
   render() {

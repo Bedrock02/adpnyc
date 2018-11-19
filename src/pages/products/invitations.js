@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Image } from 'semantic-ui-react';
-import Layout from '../components/Layout/';
-import ProductLayout from '../components/ProductLayout/';
-import productImage from '../../public/static/images/adp_invite.jpg';
+import Layout from '../../components/Layout/';
+import ProductLayout from '../../components/ProductLayout/';
+import productImage from '../../../public/static/images/adp_invite.jpg';
 
 class ThermographyPage extends React.PureComponent {
   render() {

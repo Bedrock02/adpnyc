@@ -17,7 +17,7 @@ class ProductsPage extends React.Component {
             {chunk.map( (product, index) => {
               return (
                 <Grid.Column verticalAlign={"middle"}>
-                  <Link to={product.link} style={{color: "#000000c9"}}>
+                  <Link to={`/products/${product.link}`} style={{color: "#000000c9"}}>
                     {product.image}
                     <h2>{product.name}</h2>
                   </Link>

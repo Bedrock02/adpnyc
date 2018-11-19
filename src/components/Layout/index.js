@@ -37,7 +37,7 @@ const Layout = ({ children, data }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <Grid relaxed style={{marginTop: '10px'}}>
           <Navigation />
-            <Container style={{paddingTop: '40px'}}>
+            <Container style={{paddingTop: '40px', minHeight: '51vh'}}>
               {children}
             </Container>
         </Grid>

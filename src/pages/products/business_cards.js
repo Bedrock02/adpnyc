@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Image } from 'semantic-ui-react';
-import Layout from '../components/Layout/';
-import ProductLayout from '../components/ProductLayout/';
-import productImage from '../../public/static/images/adp_business_cards.jpg';
+import Layout from '../../components/Layout/';
+import ProductLayout from '../../components/ProductLayout/';
+import productImage from '../../../public/static/images/adp_business_cards.jpg';
 
 class BusinessCardsPage extends React.PureComponent {
   render() {

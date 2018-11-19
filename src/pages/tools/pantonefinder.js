@@ -1,7 +1,7 @@
 import React from 'react';
 import { SwatchesPicker, ChromePicker } from 'react-color';
-import { Grid, Divider } from 'semantic-ui-react';
-import Layout from '../components/Layout/';
+import { Grid, Divider, Icon } from 'semantic-ui-react';
+import Layout from '../../components/Layout/';
 import pantone from 'nearest-pantone';
 import invert from 'invert-color';
 
@@ -40,7 +40,7 @@ class ColorPicker extends React.Component {
 
     return (
       <Layout>
-        <h1>Pantone Finder</h1>
+        <h1><Icon name="tint" />Pantone Finder</h1>
 
         <p>Find the right Pantone Color you are looking for.
         Use the color picker below or enter a color value and the Pantone

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Image } from 'semantic-ui-react';
-import Layout from '../components/Layout/';
-import ProductLayout from '../components/ProductLayout/';
-import productImage from '../../public/static/images/adp_postcards.jpg';
+import Layout from '../../components/Layout/';
+import ProductLayout from '../../components/ProductLayout/';
+import productImage from '../../../public/static/images/adp_postcards.jpg';
 
 class PostcardsPage extends React.PureComponent {
   render() {

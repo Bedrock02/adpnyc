@@ -6,6 +6,7 @@
   "dependencies": {
     "async": "^2.6.1",
     "cheerio": "^1.0.0-rc.2",
+    "color2library": "^1.0.8",
     "gatsby": "next",
     "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-less": "^2.0.0-beta.5",
@@ -15,6 +16,7 @@
     "lodash": "^4.17.11",
     "nearest-pantone": "^1.0.1",
     "nuka-carousel": "^4.4.1",
+    "qrcode.react": "^0.8.0",
     "react": "^16.4.1",
     "react-color": "^2.14.1",
     "react-dom": "^16.4.1",
