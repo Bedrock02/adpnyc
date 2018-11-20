@@ -11,7 +11,7 @@ import {
 const NavStyles = {
   menu: { color: "#FFFFFF" },
   activeMenu: { color: "#DA097A" },
-  mobileMenu: { color: "#FFFFFF" },
+  mobileMenu: { color: "#FFFFFF", paddingLeft: '30px' },
 };
 
 const handleOnClick = (location) => {
@@ -60,17 +60,24 @@ class Navigation extends React.Component {
   render() {
     const { showMobileMenu } = this.state;
     return (
-        <Grid.Row className="nav-container" centered padded="true">
-          <Responsive minWidth={680}>
-            <CustomMenu secondary={true} vertical={false} />
-          </Responsive>
-          <Responsive maxWidth={680}>
-            <Icon name="bars" size="large" style={NavStyles.mobileMenu} onClick={this.handleOnClick}/>
-            { showMobileMenu &&
-              <CustomMenu secondary={true} vertical={true} />
-            }
-          </Responsive>
-        </Grid.Row>
+      <>
+        <Responsive minWidth={680}>
+          <CustomMenu secondary={true} vertical={false} style={{backgroundColor: '#000000c9'}}/>
+        </Responsive>
+
+        <Responsive maxWidth={680}>
+          <Grid>
+            <Grid.Row className="nav-container" padded="true" column={1}>
+              <Grid.Column>
+                <Icon name="bars" size="large" style={NavStyles.mobileMenu} onClick={this.handleOnClick}/>
+                { showMobileMenu &&
+                  <CustomMenu secondary={true} vertical={true} style={{width: '100%', textAlign: 'center'}} />
+                }
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Responsive>
+      </>
     );
   }
 }
