@@ -40,8 +40,8 @@ const Layout = ({ children, data }) => (
             <Container style={{paddingTop: '40px', minHeight: '51vh'}}>
               {children}
             </Container>
+          <Footer />
         </Grid>
-        <Footer />
       </>
     )}
   />
