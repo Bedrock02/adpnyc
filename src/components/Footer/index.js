@@ -18,7 +18,7 @@ class Footer extends React.Component {
           <Grid.Row columns={2}>
             <Grid.Column width={8} textAlign="center">
               <div>
-                <Icon name="location arrow" />
+                <Icon name="map marker alternate" />
                 <span> 242 West 36th Street, 8th Floor New York, NY 10018 </span>
               </div>
               <Divider />

@@ -20,11 +20,11 @@ const sideContent = (
     </a>
     <h4><Icon name="time"/>Hours of Operation</h4>
     <List divided relaxed>
-      <List.Item>Mon 9:00 AM - 5:00 PM</List.Item>
-      <List.Item>Tue 9:00 AM - 5:00 PM</List.Item>
-      <List.Item>Wed 9:00 AM - 5:00 PM</List.Item>
-      <List.Item>Thur 9:00 AM - 5:00 PM</List.Item>
-      <List.Item>Fri 9:00 AM - 5:00 PM</List.Item>
+      <List.Item>Mon 8:00 AM - 5:00 PM</List.Item>
+      <List.Item>Tue 8:00 AM - 5:00 PM</List.Item>
+      <List.Item>Wed 8:00 AM - 5:00 PM</List.Item>
+      <List.Item>Thur 8:00 AM - 5:00 PM</List.Item>
+      <List.Item>Fri 8:00 AM - 5:00 PM</List.Item>
     </List>
   </Segment>
 );

@@ -21,7 +21,7 @@ class Bleeds extends React.PureComponent {
             don’t add bleeds as shown below. See the Image below for more
             details
           </p>
-          <Image src={bleedImg} />
+          <Image src={bleedImg} size="big" centered="true"/>
         </Container>
       </Layout>
     );
