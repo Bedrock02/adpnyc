@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 
 const FooterStyles = {
   marginTop: '50px',
-  padding: '30px 0px',
   background: '#000000c9',
   color: '#FFFFFF',
   width: '100%',
@@ -14,7 +13,7 @@ class Footer extends React.Component {
   render() {
     return(
       <div style={FooterStyles}>
-        <Grid stackable={true} style={{padding: '30px 0px'}}>
+        <Grid stackable={true} style={{padding: '30px 20px'}}>
           <Grid.Row columns={2}>
             <Grid.Column width={8} textAlign="center">
               <div>
