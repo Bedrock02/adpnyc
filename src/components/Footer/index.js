@@ -14,7 +14,7 @@ class Footer extends React.Component {
     return(
       <div style={FooterStyles}>
       <Container>
-        <Grid stackable={true}>
+        <Grid stackable={true} style={{padding: '30px 0px'}}>
           <Grid.Row columns={2}>
             <Grid.Column width={8} textAlign="center">
               <div>
@@ -59,12 +59,25 @@ class Footer extends React.Component {
                     Contact
                   </Link>
                 </List.Item>
-
               </List>
             </Grid.Column>
           </Grid.Row>
         </Grid>
       </Container>
+      <Divider/>
+      <Grid>
+        <Grid.Row columns={3} style={{fontSize: '12px'}}>
+          <Grid.Column textAlign="center">
+            © 2018 Advanced Digital NYC, Inc.
+          </Grid.Column>
+          <Grid.Column textAlign="center">
+            <Link to="/conditions" style={{color: "#FFFFFF"}}>Conditions of Sale</Link>
+          </Grid.Column>
+          <Grid.Column textAlign="center">
+            <Link to="/privacy" style={{color: "#FFFFFF"}}>Privacy Policy</Link>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
       </div>
     );
   }
