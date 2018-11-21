@@ -50,7 +50,7 @@ class IndexPage extends React.Component {
               <Grid.Column width={5} textAlign='left'>
                 {sideContent}
               </Grid.Column>
-              <Grid.Column width={11} stackable="true">
+              <Grid.Column width={11}>
                 {centerContent}
               </Grid.Column>
             </Grid.Row>
