@@ -33,7 +33,18 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <Responsive minWidth={1020}>
+        <Responsive {...Responsive.onlyMobile}>
+          <Grid>
+            <Grid.Row centered padded="true" columns={2}>
+              <Grid.Column width={16} stackable="true">
+                {centerContent}
+                {sideContent}
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Responsive>
+
+        <Responsive minWidth={Responsive.onlyTablet.minWidth}>
           <Grid>
             <Grid.Row centered padded="true" columns={2}>
               <Grid.Column width={5} textAlign='left'>
@@ -46,16 +57,6 @@ class IndexPage extends React.Component {
           </Grid>
         </Responsive>
 
-        <Responsive maxWidth={1020}>
-          <Grid>
-            <Grid.Row centered padded="true" columns={2}>
-              <Grid.Column width={16} stackable="true">
-                {centerContent}
-                {sideContent}
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Responsive>
         <Trio />
       </Layout>
     );
