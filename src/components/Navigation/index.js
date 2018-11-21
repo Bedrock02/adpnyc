@@ -22,28 +22,42 @@ const handleOnClick = (location) => {
 const CustomMenu = ({ ...props }) => {
   return (
     <Container>
-      <Menu {...props}>
-        <Menu.Item style={NavStyles.menu} as={Link} to="/" name="" activeStyle={NavStyles.activeMenu}>
-          Home
-        </Menu.Item>
-        <Menu.Item style={NavStyles.menu} as={Link} to="/products" name="products" activeStyle={NavStyles.activeMenu}>
-          Products & Services
-        </Menu.Item>
-        <Menu.Item style={NavStyles.menu} as={Link} name="tools" to="/tools" activeStyle={NavStyles.activeMenu}>
-          Tools & Information
-        </Menu.Item>
-        <Menu.Item
-          style={NavStyles.menu}
-          as={Link}
-          name="upload_files"
-          onClick={(e) => {
-            e.stopPropagation();
-            e.preventDefault();
-            window.open('https://adpnyc.wetransfer.com/', '_blank');
-          }}
-        />
-        <Menu.Item style={NavStyles.menu} as={Link} name="contact" to="/contact" activeStyle={NavStyles.activeMenu}/>
-      </Menu>
+      <Grid>
+        <Grid.Row centered="true">
+          <Menu {...props}>
+            <div>
+              <Menu.Item style={NavStyles.menu} as={Link} to="/" name="" activeStyle={NavStyles.activeMenu}>
+                Home
+              </Menu.Item>
+            </div>
+            <div>
+            <Menu.Item style={NavStyles.menu} as={Link} to="/products" name="products" activeStyle={NavStyles.activeMenu}>
+              Products & Services
+            </Menu.Item>
+            </div>
+            <div>
+            <Menu.Item style={NavStyles.menu} as={Link} name="tools" to="/tools" activeStyle={NavStyles.activeMenu}>
+              Tools & Information
+            </Menu.Item>
+            </div>
+            <div>
+            <Menu.Item
+              style={NavStyles.menu}
+              as={Link}
+              name="upload_files"
+              onClick={(e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                window.open('https://adpnyc.wetransfer.com/', '_blank');
+              }}
+            />
+            </div>
+            <div>
+            <Menu.Item style={NavStyles.menu} as={Link} name="contact" to="/contact" activeStyle={NavStyles.activeMenu}/>
+            </div>
+          </Menu>
+        </Grid.Row>
+      </Grid>
     </Container>
   );
 }
