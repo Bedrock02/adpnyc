@@ -42,6 +42,7 @@ class IndexPage extends React.Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
+          <Trio />
         </Responsive>
 
         <Responsive minWidth={Responsive.onlyTablet.minWidth}>
@@ -55,9 +56,8 @@ class IndexPage extends React.Component {
               </Grid.Column>
             </Grid.Row>
           </Grid>
+          <Trio />
         </Responsive>
-
-        <Trio />
       </Layout>
     );
   }
