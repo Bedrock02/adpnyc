@@ -5,7 +5,8 @@ import {
   Responsive,
   Icon,
   Grid,
-  Dropdown
+  Dropdown,
+  Container
 } from 'semantic-ui-react';
 
 const NavStyles = {
@@ -20,28 +21,44 @@ const handleOnClick = (location) => {
 
 const CustomMenu = ({ ...props }) => {
   return (
-    <Menu {...props}>
-      <Menu.Item style={NavStyles.menu} as={Link} to="/" name="" activeStyle={NavStyles.activeMenu}>
-        Home
-      </Menu.Item>
-      <Menu.Item style={NavStyles.menu} as={Link} to="/products" name="products" activeStyle={NavStyles.activeMenu}>
-        Products & Services
-      </Menu.Item>
-      <Menu.Item style={NavStyles.menu} as={Link} name="tools" to="/tools" activeStyle={NavStyles.activeMenu}>
-        Tools & Information
-      </Menu.Item>
-      <Menu.Item
-        style={NavStyles.menu}
-        as={Link}
-        name="upload_files"
-        onClick={(e) => {
-          e.stopPropagation();
-          e.preventDefault();
-          window.open('https://adpnyc.wetransfer.com/', '_blank');
-        }}
-      />
-      <Menu.Item style={NavStyles.menu} as={Link} name="contact" to="/contact" activeStyle={NavStyles.activeMenu}/>
-    </Menu>
+    <Container>
+      <Grid>
+        <Grid.Row centered="true">
+          <Menu {...props}>
+            <div>
+              <Menu.Item style={NavStyles.menu} as={Link} to="/" name="" activeStyle={NavStyles.activeMenu}>
+                Home
+              </Menu.Item>
+            </div>
+            <div>
+            <Menu.Item style={NavStyles.menu} as={Link} to="/products" name="products" activeStyle={NavStyles.activeMenu}>
+              Products & Services
+            </Menu.Item>
+            </div>
+            <div>
+            <Menu.Item style={NavStyles.menu} as={Link} name="tools" to="/tools" activeStyle={NavStyles.activeMenu}>
+              Tools & Information
+            </Menu.Item>
+            </div>
+            <div>
+            <Menu.Item
+              style={NavStyles.menu}
+              as={Link}
+              name="upload_files"
+              onClick={(e) => {
+                e.stopPropagation();
+                e.preventDefault();
+                window.open('https://adpnyc.wetransfer.com/', '_blank');
+              }}
+            />
+            </div>
+            <div>
+            <Menu.Item style={NavStyles.menu} as={Link} name="contact" to="/contact" activeStyle={NavStyles.activeMenu}/>
+            </div>
+          </Menu>
+        </Grid.Row>
+      </Grid>
+    </Container>
   );
 }
 
@@ -60,24 +77,21 @@ class Navigation extends React.Component {
   render() {
     const { showMobileMenu } = this.state;
     return (
-      <>
-        <Responsive minWidth={680}>
-          <CustomMenu secondary={true} vertical={false} style={{backgroundColor: '#000000c9'}}/>
-        </Responsive>
-
-        <Responsive maxWidth={680}>
-          <Grid>
-            <Grid.Row className="nav-container" padded="true" column={1}>
-              <Grid.Column>
-                <Icon name="bars" size="large" style={NavStyles.mobileMenu} onClick={this.handleOnClick}/>
-                { showMobileMenu &&
-                  <CustomMenu secondary={true} vertical={true} style={{width: '100%', textAlign: 'center'}} />
-                }
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Responsive>
-      </>
+      <Grid>
+        <Grid.Row style={{backgroundColor: '#000000c9'}}>
+          <Grid.Column>
+            <Responsive minWidth={680}>
+              <CustomMenu secondary={true} vertical={false}/>
+            </Responsive>
+            <Responsive maxWidth={680}>
+              <Icon name="bars" size="large" style={NavStyles.mobileMenu} onClick={this.handleOnClick}/>
+              { showMobileMenu &&
+                <CustomMenu secondary={true} vertical={true} style={{width: '100%', textAlign: 'center'}} />
+              }
+            </Responsive>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     );
   }
 }
