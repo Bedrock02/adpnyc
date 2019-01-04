@@ -6,6 +6,7 @@ import SideMenu from '../components/SideMenu/';
 import Trio from '../components/Trio';
 import DigitalImage from '../../public/static/images/digital-image.jpg';
 import MapImage from '../../public/static/images/map.png';
+import Helmet from 'react-helmet';
 
 const centerContent = (
   <div>
@@ -29,36 +30,55 @@ const sideContent = (
   </Segment>
 );
 
+const keywords = "Advanced Digital NYC, digital printing, printing,\
+  printing solutions, posters, brochures, ecofriendly";
+
 class IndexPage extends React.Component {
   render() {
     return (
-      <Layout>
-        <Responsive {...Responsive.onlyMobile}>
-          <Grid>
-            <Grid.Row centered padded="true" columns={2}>
-              <Grid.Column width={16} stackable="true">
-                {centerContent}
-                {sideContent}
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-          <Trio />
-        </Responsive>
+      <>
+        <Helmet
+          title={"Advanced Digital NYC"}
+          meta={[
+            {
+              name: 'description',
+              content: 'Advanced Digital NYC is your solution to all your digital printing needs.\
+                We offer various services such as printing of posters, brochures, business cards and more.\
+                We also offer products made with high quality, and ecofriendly material.',
+            },
+            {
+              name: 'keywords',
+              content: keywords },
+          ]}
+        />
+        <Layout>
+          <Responsive {...Responsive.onlyMobile}>
+            <Grid>
+              <Grid.Row centered padded="true" columns={2}>
+                <Grid.Column width={16} stackable="true">
+                  {centerContent}
+                  {sideContent}
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+            <Trio />
+          </Responsive>
 
-        <Responsive minWidth={Responsive.onlyTablet.minWidth}>
-          <Grid>
-            <Grid.Row centered padded="true" columns={2}>
-              <Grid.Column width={5} textAlign='left'>
-                {sideContent}
-              </Grid.Column>
-              <Grid.Column width={11}>
-                {centerContent}
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-          <Trio />
-        </Responsive>
-      </Layout>
+          <Responsive minWidth={Responsive.onlyTablet.minWidth}>
+            <Grid>
+              <Grid.Row centered padded="true" columns={2}>
+                <Grid.Column width={5} textAlign='left'>
+                  {sideContent}
+                </Grid.Column>
+                <Grid.Column width={11}>
+                  {centerContent}
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+            <Trio />
+          </Responsive>
+        </Layout>
+      </>
     );
   }
 }
