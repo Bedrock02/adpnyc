@@ -1,9 +1,12 @@
 import React from 'react';
-import { Container, Grid, Card, Image } from 'semantic-ui-react';
+import { Grid   } from 'semantic-ui-react';
+import Helmet from 'react-helmet';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout/';
 import products from '../data/products';
 import _ from 'lodash';
+
+const keywords = 'nyc digital printing, products, digital printing, brochures, business cards, counter cards, invitations, postcards, color prints';
 
 class ProductsPage extends React.Component {
 
@@ -29,11 +32,24 @@ class ProductsPage extends React.Component {
       )
     });
     return (
-      <Layout>
-        <Grid centered="true" stackable>
-          {rows.map( row => row)}
-        </Grid>
-      </Layout>
+      <>
+        <Helmet
+          title={"Products & Services"}
+          meta={[
+            {
+              name: 'description',
+              content: 'ADP products that are offered. Digital printing products are made to fit your needs.' },
+            {
+              name: 'keywords',
+              content: keywords },
+          ]}
+        />
+        <Layout>
+          <Grid centered="true" stackable>
+            {rows.map( row => row)}
+          </Grid>
+        </Layout>
+      </>
     );
   }
 }

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Semantic UI Starter',
+    title: 'ADP NYC',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
