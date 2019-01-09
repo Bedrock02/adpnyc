@@ -4,7 +4,9 @@ import Layout from '../../components/Layout/';
 import hexToPantone from '../../data/hexToPantone';
 import invert from 'invert-color';
 import _ from 'lodash';
+import Helmet from 'react-helmet';
 
+const keywords = "pantone, hex, pantone converter, pantone to hex, ADP, Advanced Digital Printing NYC, NYC printing";
 
 class PantoneFinderPage extends React.Component {
   /**
@@ -42,43 +44,57 @@ class PantoneFinderPage extends React.Component {
       )
     });
     return (
-      <Layout>
-        <h1><Icon name="tint" />Pantone Finder</h1>
+      <>
+        <Helmet
+          title={"ADP: Pantone Finder"}
+          meta={[
+            {
+              name: 'description',
+              content: 'Pantone Finder. Use this tool to find your desired pantone color\
+               Convert your pantone color to hex code.' },
+            {
+              name: 'keywords',
+              content: keywords },
+          ]}
+        />
+        <Layout>
+          <h1><Icon name="tint" />Pantone Finder</h1>
 
-        <p>Find the right Pantone (PMS) color you are looking for.
-        Click or tap on one of the colors below and the Pantone
-        finder will display the Pantone name and hex value for that color.
-        </p>
+          <p>Find the right Pantone (PMS) color you are looking for.
+          Click or tap on one of the colors below and the Pantone
+          finder will display the Pantone name and hex value for that color.
+          </p>
 
-        <p><strong>Note: </strong>
-         The color of the final product may vary due to the difference in
-        computer monitors, the product material and the printing process.
-        </p>
-        <Grid>
-          <Grid.Row centered="true">
-            <div
-              style={{
-                height: '200px',
-                width: '50%',
-                background: hex,
-                color: invert(hex),
-                padding: '50px 20px',
-              }}>
-              <h3>{`Pantone ${name}`}</h3>
-              <h3>{`Hex ${hex}`}</h3>
-            </div>
-          </Grid.Row>
-        </Grid>
+          <p><strong>Note: </strong>
+           The color of the final product may vary due to the difference in
+          computer monitors, the product material and the printing process.
+          </p>
+          <Grid>
+            <Grid.Row centered="true">
+              <div
+                style={{
+                  height: '200px',
+                  width: '50%',
+                  background: hex,
+                  color: invert(hex),
+                  padding: '50px 20px',
+                }}>
+                <h3>{`Pantone ${name}`}</h3>
+                <h3>{`Hex ${hex}`}</h3>
+              </div>
+            </Grid.Row>
+          </Grid>
 
-        <Divider />
-        <Grid
-          centered="true"
-          stackable
-          divided="vertically"
-          style={{overflowY: 'scroll', height: '500px'}}>
-          {rows.map( row => row)}
-        </Grid>
-      </Layout>
+          <Divider />
+          <Grid
+            centered="true"
+            stackable
+            divided="vertically"
+            style={{overflowY: 'scroll', height: '500px'}}>
+            {rows.map( row => row)}
+          </Grid>
+        </Layout>
+      </>
     );
   }
 }
