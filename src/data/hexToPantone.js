@@ -1,5 +1,3 @@
-import React from 'react';
-
 const hexToPantone = [
   {'hex': '#F4ED7C', 'name': '100'},
   {'hex': '#F4ED47', 'name': '101'},

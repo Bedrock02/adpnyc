@@ -1,5 +1,4 @@
 import React from 'react';
-import { SwatchesPicker, ChromePicker } from 'react-color';
 import { Grid, Divider, Icon } from 'semantic-ui-react';
 import Layout from '../../components/Layout/';
 import hexToPantone from '../../data/hexToPantone';
