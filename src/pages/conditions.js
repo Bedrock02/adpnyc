@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Grid, Icon, Button, List } from 'semantic-ui-react';
-import { Link } from 'gatsby';
+import { List } from 'semantic-ui-react';
 import Layout from '../components/Layout/';
 import Helmet from 'react-helmet';
 
@@ -8,10 +7,6 @@ const keywords = "Conditions, privacy, company, trust, ADP, Advanced Digital Pri
 
 class ConditionsPage extends React.Component {
   render() {
-    const styles = {
-      linkStyles: { color: '#000000c9'},
-      buttonDiv: { marginTop: '30px' },
-    }
     return (
       <>
         <Helmet

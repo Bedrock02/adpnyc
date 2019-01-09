@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { Grid, Container, Menu, Image, Responsive } from 'semantic-ui-react';
+import { Grid, Image, Responsive } from 'semantic-ui-react';
 import image from '../../../public/static/images/logo.png';
 
 class Header extends React.Component {
@@ -14,6 +13,7 @@ class Header extends React.Component {
                 <img
                   className='logoImage'
                   src={image}
+                  alt="ADP Logo"
                   style={{width: '80vw'}}
                 />
               </Responsive>
@@ -21,12 +21,13 @@ class Header extends React.Component {
                 <img
                   className='logoImage'
                   src={image}
+                  alt="ADP Logo tablet"
                   style={{width: '50vw'}}
                 />
               </Responsive>
 
               <Responsive {...Responsive.onlyComputer}>
-                <Image src={image} size="huge"/>
+                <Image src={image} alt="ADP Logo Desktop" size="huge"/>
               </Responsive>
             </div>
           </Grid.Column>

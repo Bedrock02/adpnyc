@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Input, Label, Menu } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 import { Link } from 'gatsby';
 
 const LinkedItem = ({ children, ...props}) => {
@@ -14,9 +14,6 @@ const LinkedItem = ({ children, ...props}) => {
     );
 };
 
-const sideMenuStyles = {
-  container: { height: '500px' },
-}
 
 class SideMenu extends Component {
   render() {

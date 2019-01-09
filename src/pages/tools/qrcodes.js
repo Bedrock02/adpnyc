@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Image } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
 import Layout from '../../components/Layout/';
 import QRCode from 'qrcode.react';
 

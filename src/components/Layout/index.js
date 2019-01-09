@@ -1,17 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-import { Container, Grid, Menu, Responsive } from 'semantic-ui-react'
+import { Container, Grid} from 'semantic-ui-react'
 import Header from '../Header/';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
 import 'semantic-ui-less/semantic.less';
-import { Link } from 'gatsby';
-
-const LinkedItem = ({ children, ...props }) => (
-  <Menu.Item as={Link} activeClassName='active' {...props}>{children}</Menu.Item>
-)
 
 const Layout = ({ children, data }) => (
   <>

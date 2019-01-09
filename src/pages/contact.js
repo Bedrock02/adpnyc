@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Divider, Icon } from 'semantic-ui-react';
+import { Grid, Divider, Icon } from 'semantic-ui-react';
 import Layout from '../components/Layout/';
 import StaticForm from '../components/StaticForm/';
 import Helmet from 'react-helmet';

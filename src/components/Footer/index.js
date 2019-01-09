@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Icon, Container, Divider, List } from 'semantic-ui-react';
+import { Grid, Icon, Divider, List } from 'semantic-ui-react';
 import { Link } from 'gatsby';
 
 const FooterStyles = {

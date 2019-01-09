@@ -1,8 +1,6 @@
 import React from 'react';
-import { Grid, Responsive, Image, Message, Segment, List, Icon } from 'semantic-ui-react';
-import { Link } from 'gatsby';
+import { Grid, Responsive, Image, Segment, List, Icon } from 'semantic-ui-react';
 import Layout from '../components/Layout/';
-import SideMenu from '../components/SideMenu/';
 import Trio from '../components/Trio';
 import DigitalImage from '../../public/static/images/digital-image.jpg';
 import MapImage from '../../public/static/images/map.png';

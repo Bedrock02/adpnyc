@@ -5,7 +5,6 @@ import {
   Responsive,
   Icon,
   Grid,
-  Dropdown,
   Container
 } from 'semantic-ui-react';
 
@@ -14,10 +13,6 @@ const NavStyles = {
   activeMenu: { color: "#DA097A" },
   mobileMenu: { color: "#FFFFFF", paddingLeft: '30px' },
 };
-
-const handleOnClick = (location) => {
-  window.open(location, '_blank');
-}
 
 const CustomMenu = ({ ...props }) => {
   return (

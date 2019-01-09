@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Icon, Button } from 'semantic-ui-react';
+import { Grid, Icon, Button } from 'semantic-ui-react';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout/';
 import Helmet from 'react-helmet';

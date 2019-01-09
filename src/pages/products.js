@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Card, Image } from 'semantic-ui-react';
+import { Grid   } from 'semantic-ui-react';
 import Helmet from 'react-helmet';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout/';
