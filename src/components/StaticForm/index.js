@@ -27,7 +27,7 @@ const ResponsiveGrid = ({ children, props }) => (
 
 const StaticForm = () => (
   <ResponsiveGrid>
-    <Form id="contact" className='static-form' action="https://formspree.io/someADP@adp.com" method="POST">
+    <Form id="contact" className='static-form' action="https://formspree.io/info@adpnyc.com" method="POST">
       <Form.Input className="form-input" name="name" label='Your Name' placeholder='Joseph Modesto' width={8} />
       <Form.Input className="form-input" name="_replyto" label='Email' placeholder='joseph.modesto@gmail.com' width={8} />
       <Form.Input className="form-input" name="subject" label='Subject' placeholder='Need Business Cards' width={8} />

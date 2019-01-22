@@ -28,7 +28,7 @@ class Footer extends React.Component {
               <Divider />
               <div>
                 <Icon name="mail" />
-                <span>some_email_here@adp.com</span>
+                <span>info@adpnyc.com</span>
               </div>
             </Grid.Column>
 
