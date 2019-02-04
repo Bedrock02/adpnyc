@@ -1,3 +1,7 @@
+## 1.0.0 (February 04, 2019)
+  - Add VERSION and CHANGELOG.md files, Bump version to v0.1.0.
+  - Add VERSION and CHANGELOG.md files, Bump version to v0.1.0.
+
 ## 0.1.0 (February 04, 2019)
   - Merge pull request #5 from Bedrock02/company-email
   - Change Template Email to Actual Email
