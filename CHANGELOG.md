@@ -1,0 +1,39 @@
+## 0.1.0 (February 04, 2019)
+  - Merge pull request #5 from Bedrock02/company-email
+  - Change Template Email to Actual Email
+  - Hotfix 1.1.1
+  - Merge pull request #4 from Bedrock02/develop
+  - Merge pull request #3 from Bedrock02/metadata
+  - Make logo into a link
+  - Clean Up
+  - Add Meta Tags and Title Tag
+  - Merge branch 'master' into develop
+  - Refactor Menu in order to center
+  - Move Trio
+  - remove stackable
+  - Home Page Responsive Fix
+  - Refactor Nav
+  - Better Responsive Menu
+  - Merge pull request #1 from Bedrock02/revisions
+  - Better Responsive Menu
+  - Fitter Footer, Responsive Form
+  - Responsive Logo
+  - remove dummy page
+  - Privacy & Conditions
+  - Broken 404
+  - Removed template data
+  - Final touches
+  - Pantone Finder
+  - ReOrg & Tools
+  - colorpicker
+  - Responsive product layout
+  - Link Products
+  - products grid
+  - WIP
+  - Fix links issue
+  - Map & Hours
+  - New Content
+  - missing variable
+  - ADP Draft
+  - Initial commit
+
